@@ -118,6 +118,23 @@ $(document).ready(function(){
             }
         }
     })
+
+    var bannerRenault = $(".carousel-renault");
+    bannerRenault.owlCarousel({
+        loop:true,        
+        nav:true,
+        dots:true,
+        center:true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        responsive:{
+            0:{
+                items:1,
+            }
+        }
+    })
+
+
     var screenshot = $(".screenshot-carousel-rtl");
     screenshot.owlCarousel({
         rtl:true,

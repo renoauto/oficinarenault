@@ -1048,7 +1048,7 @@
     color: #777;
   }
   .home-style-two .darkHeader .navbar-nav .active > .nav-link {
-    color: #18e7d3;
+    color: #ffb000;
   }
   .img-scroll {
     left: 19px;
@@ -1153,7 +1153,7 @@
     color: #777;
   }
   .home-style nav.darkHeader .navbar-nav .active > .nav-link {
-    color: #18e7d3;
+    color: #ffb000;
   }
   .features img {
     width: 80px;
@@ -1306,12 +1306,12 @@
     margin-top: 100px;
   }
   .theme-form .form-control {
-    -webkit-box-shadow: 0 0 5px 0 #18e7d3;
-    box-shadow: 0 0 5px 0 #18e7d3;
+    -webkit-box-shadow: 0 0 5px 0 #ffb000;
+    box-shadow: 0 0 5px 0 #ffb000;
   }
   .theme-form .form-control {
-    -webkit-box-shadow: 0 0 5px 0 #18e7d3;
-    box-shadow: 0 0 5px 0 #18e7d3;
+    -webkit-box-shadow: 0 0 5px 0 #ffb000;
+    box-shadow: 0 0 5px 0 #ffb000;
   }
 }
 @media (max-width: 767px) {
@@ -2501,30 +2501,30 @@
 @media (max-width: 991px) {
   .rtl .testimonial-carousel-rtl.owl-theme .owl-dots .owl-dot.active span,
   .rtl .price-carousel-rtl.owl-theme .owl-dots .owl-dot.active span {
-    background: #18e7d3;
+    background: #ffb000;
     background: -webkit-gradient(
       linear,
       left top,
       left bottom,
-      color-stop(0, #18e7d3),
+      color-stop(0, #ffb000),
       to(#19d0de)
     );
-    background: linear-gradient(to bottom, #18e7d3 0, #19d0de 100%);
+    background: linear-gradient(to bottom, #ffb000 0, #19d0de 100%);
     width: 25px;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
   .rtl .testimonial-carousel-rtl.owl-theme .owl-dots .owl-dot span,
   .rtl .price-carousel-rtl.owl-theme .owl-dots .owl-dot span {
-    background: #18e7d3;
+    background: #ffb000;
     background: -webkit-gradient(
       linear,
       left top,
       left bottom,
-      color-stop(0, #18e7d3),
+      color-stop(0, #ffb000),
       to(#19d0de)
     );
-    background: linear-gradient(to bottom, #18e7d3 0, #19d0de 100%);
+    background: linear-gradient(to bottom, #ffb000 0, #19d0de 100%);
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
