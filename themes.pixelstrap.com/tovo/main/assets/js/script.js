@@ -1,6 +1,6 @@
 "use strict";
 
-$(document).ready(function(){
+$(document).ready(function () {
 
     /*----------------------------------------
      passward show hide
@@ -8,33 +8,33 @@ $(document).ready(function(){
     $('.show-hide').show();
     $('.show-hide span').addClass('show');
 
-    $('.show-hide span').click(function(){
-        if( $(this).hasClass('show') ) {
-            $('input[name="login[password]"]').attr('type','text');
+    $('.show-hide span').click(function () {
+        if ($(this).hasClass('show')) {
+            $('input[name="login[password]"]').attr('type', 'text');
             $(this).removeClass('show');
         } else {
-            $('input[name="login[password]"]').attr('type','password');
+            $('input[name="login[password]"]').attr('type', 'password');
             $(this).addClass('show');
         }
     });
-    $('form button[type="submit"]').on('click', function(){
+    $('form button[type="submit"]').on('click', function () {
         $('.show-hide span').text('Show').addClass('show');
-        $('.show-hide').parent().find('input[name="login[password]"]').attr('type','password');
+        $('.show-hide').parent().find('input[name="login[password]"]').attr('type', 'password');
     });
 
 
- /*------------------------
-     loader
-     --------------------------*/
-     $('.loader-wrapper').fadeOut('slow', function() {
-            $(this).remove();
-        });
-    
-	
+    /*------------------------
+        loader
+        --------------------------*/
+    $('.loader-wrapper').fadeOut('slow', function () {
+        $(this).remove();
+    });
+
+
     /*----------------------------------------
      Dark Header
      ----------------------------------------*/
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll >= 60) {
             $(".navbar").addClass("darkHeader");
@@ -46,10 +46,10 @@ $(document).ready(function(){
     /*----------------------------------------
      mobile menu nav click hide collapse
      ----------------------------------------*/
-    var mobile_menu = $( window ).width();
-    if(mobile_menu < 991){
-        $("nav a.nav-link").on('click', function(event) {
-            if(!$(this).hasClass('dropdown-toggle')){
+    var mobile_menu = $(window).width();
+    if (mobile_menu < 991) {
+        $("nav a.nav-link").on('click', function (event) {
+            if (!$(this).hasClass('dropdown-toggle')) {
 
                 console.log('click');
                 $(".navbar-collapse").collapse('hide');
@@ -61,25 +61,25 @@ $(document).ready(function(){
     /*----------------------------------------
      home removeclass section
      ----------------------------------------*/
-    var slider_caption = $( window ).width();
-    if(slider_caption >= 2000){
+    var slider_caption = $(window).width();
+    if (slider_caption >= 2000) {
         $('.home-right').addClass("home-contain");
     }
-    if(slider_caption <= 1024){
+    if (slider_caption <= 1024) {
         $('.home-right').addClass("home-contain");
     }
 
     /*----------------------------------------
      GO to Home
      ----------------------------------------*/
-    $(window).on('scroll', function() {
+    $(window).on('scroll', function () {
         if ($(this).scrollTop() > 500) {
             $('.tap-top').fadeIn();
         } else {
             $('.tap-top').fadeOut();
         }
     });
-    $('.tap-top').on('click', function() {
+    $('.tap-top').on('click', function () {
         $("html, body").animate({
             scrollTop: 0
         }, 600);
@@ -93,43 +93,43 @@ $(document).ready(function(){
      ----------------------------------------*/
     var screenshot = $(".screenshot-carousel");
     screenshot.owlCarousel({
-        loop:true,
-        margin:30,
-        nav:false,
-        dots:false,
-        center:true,
+        loop: true,
+        margin: 30,
+        nav: true,
+        dots: true,
+        center: true,
         autoplay: true,
         autoplayTimeout: 8000,
-        responsive:{
-            0:{
-                items:2,
+        responsive: {
+            0: {
+                items: 2,
             },
-            767:{
-                items:2,
+            767: {
+                items: 2,
             },
-            768:{
-                items:3,
+            768: {
+                items: 3,
             },
-            992:{
-                items:4,
+            992: {
+                items: 4,
             },
-            1200:{
-                items:5
+            1200: {
+                items: 5
             }
         }
     })
 
     var bannerRenault = $(".carousel-renault");
     bannerRenault.owlCarousel({
-        loop:true,        
-        nav:true,
-        dots:true,
-        center:true,
+        loop: true,
+        nav: true,
+        dots: true,
+        center: true,
         autoplay: true,
         autoplayTimeout: 4000,
-        responsive:{
-            0:{
-                items:1,
+        responsive: {
+            0: {
+                items: 1,
             }
         }
     })
@@ -137,166 +137,166 @@ $(document).ready(function(){
 
     var screenshot = $(".screenshot-carousel-rtl");
     screenshot.owlCarousel({
-        rtl:true,
-        loop:true,
-        margin:30,
-        nav:false,
-        dots:false,
-        center:true,
+        rtl: true,
+        loop: true,
+        margin: 30,
+        nav: false,
+        dots: false,
+        center: true,
         autoplay: true,
         autoplayTimeout: 8000,
-        responsive:{
-            0:{
-                items:2,
+        responsive: {
+            0: {
+                items: 2,
             },
-            767:{
-                items:2,
+            767: {
+                items: 2,
             },
-            768:{
-                items:3,
+            768: {
+                items: 3,
             },
-            992:{
-                items:4,
+            992: {
+                items: 4,
             },
-            1200:{
-                items:5
+            1200: {
+                items: 5
             }
         }
     })
 
     var team = $(".team-carousel");
     team.owlCarousel({
-        loop:true,
-        margin:30,
-        nav:false,
-        dots:true,
-        responsive:{
-            0:{
-                items:1,
-                margin:5,
+        loop: true,
+        margin: 30,
+        nav: false,
+        dots: true,
+        responsive: {
+            0: {
+                items: 1,
+                margin: 5,
             },
-            600:{
-                items:1,
-                margin:5,
+            600: {
+                items: 1,
+                margin: 5,
             },
-            768:{
-                items:2,
+            768: {
+                items: 2,
             },
-            992:{
-                items:3,
+            992: {
+                items: 3,
             },
-            1000:{
-                items:3,
+            1000: {
+                items: 3,
             }
         }
     })
     var team = $(".team-carousel-rtl");
     team.owlCarousel({
-        rtl:true,
-        loop:true,
-        margin:30,
-        nav:false,
-        dots:true,
-        responsive:{
-            0:{
-                items:1,
-                margin:5,
+        rtl: true,
+        loop: true,
+        margin: 30,
+        nav: false,
+        dots: true,
+        responsive: {
+            0: {
+                items: 1,
+                margin: 5,
             },
-            600:{
-                items:1,
-                margin:5,
+            600: {
+                items: 1,
+                margin: 5,
             },
-            768:{
-                items:2,
+            768: {
+                items: 2,
             },
-            992:{
-                items:3,
+            992: {
+                items: 3,
             },
-            1000:{
-                items:3,
+            1000: {
+                items: 3,
             }
         }
     })
 
     var blog = $(".blog-carousel");
     blog.owlCarousel({
-        loop:true,
-        margin:30,
-        nav:false,
-        dots:true,
-        responsive:{
-            0:{
-                items:1,
-                margin:5,
-                nav:false,
+        loop: true,
+        margin: 30,
+        nav: false,
+        dots: true,
+        responsive: {
+            0: {
+                items: 1,
+                margin: 5,
+                nav: false,
             },
-            600:{
-                items:1,
-                margin:0,
-                nav:false,
+            600: {
+                items: 1,
+                margin: 0,
+                nav: false,
             },
-            768:{
-                items:2,
+            768: {
+                items: 2,
             },
-            1000:{
-                items:2
+            1000: {
+                items: 2
             }
         }
     });
     var blog = $(".blog-carousel-rtl");
     blog.owlCarousel({
-        rtl:true,
-        loop:true,
-        margin:30,
-        nav:false,
-        dots:true,
-        responsive:{
-            0:{
-                items:1,
-                margin:5,
-                nav:false,
+        rtl: true,
+        loop: true,
+        margin: 30,
+        nav: false,
+        dots: true,
+        responsive: {
+            0: {
+                items: 1,
+                margin: 5,
+                nav: false,
             },
-            600:{
-                items:1,
-                margin:0,
-                nav:false,
+            600: {
+                items: 1,
+                margin: 0,
+                nav: false,
             },
-            768:{
-                items:2,
+            768: {
+                items: 2,
             },
-            1000:{
-                items:2
+            1000: {
+                items: 2
             }
         }
     });
-    
+
 
     var price = $(".price-carousel");
     price.owlCarousel({
-        loop:true,
-        margin:30,
-        nav:false,
-        dots:false,
-        responsive:{
-            0:{
-                items:1,
-                dots:true,
-                margin:0
+        loop: true,
+        margin: 30,
+        nav: true,
+        dots: true,
+        responsive: {
+            0: {
+                items: 1,
+                dots: true,
+                margin: 0
             },
-            600:{
-                items:1,
-                dots:true,
-                margin:0,
+            600: {
+                items: 1,
+                dots: true,
+                margin: 0,
             },
-            768:{
-                items:2,
-                dots:true,
+            768: {
+                items: 2,
+                dots: true,
             },
-            992:{
-                items:3,
+            992: {
+                items: 3,
             },
-            1000:{
-                items:3
+            1000: {
+                items: 3
             }
         }
     });
@@ -304,59 +304,59 @@ $(document).ready(function(){
 
     var price = $(".price-carousel-rtl");
     price.owlCarousel({
-        rtl:true,
-        loop:true,
-        margin:30,
-        nav:false,
-        dots:false,
-        responsive:{
-            0:{
-                items:1,
-                dots:true,
-                margin:0
+        rtl: true,
+        loop: true,
+        margin: 30,
+        nav: false,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1,
+                dots: true,
+                margin: 0
             },
-            600:{
-                items:1,
-                dots:true,
-                margin:0,
+            600: {
+                items: 1,
+                dots: true,
+                margin: 0,
             },
-            768:{
-                items:2,
-                dots:true,
+            768: {
+                items: 2,
+                dots: true,
             },
-            992:{
-                items:3,
+            992: {
+                items: 3,
             },
-            1000:{
-                items:3
+            1000: {
+                items: 3
             }
         }
     });
 
     var testimonial = $(".testimonial-carousel");
     testimonial.owlCarousel({
-        loop:true,
-        margin:0,
-        nav:true,
-        navClass:['owl-prev','owl-next'],
-        navText:['<img src="../assets/images/back.png">','<img src="../assets/images/next.png">'],
-        dots:false,
-        responsive:{
-            0:{
-                items:1,
-                dots:true,
-                nav:false
+        loop: true,
+        margin: 0,
+        nav: true,
+        navClass: ['owl-prev', 'owl-next'],
+        navText: ['<img src="../assets/images/back.png">', '<img src="../assets/images/next.png">'],
+        dots: true,
+        responsive: {
+            0: {
+                items: 1,
+                dots: true,
+                nav: false
             },
-            600:{
-                items:1,
-                dots:true,
-                nav:false
+            600: {
+                items: 1,
+                dots: true,
+                nav: false
             },
-            991:{
-                items:1,
+            991: {
+                items: 1,
             },
-            1000:{
-                items:1
+            1000: {
+                items: 1
             }
         }
     });
@@ -388,40 +388,45 @@ $(document).ready(function(){
                 items: 1
             }
         }
-    });   
+    });
     /*----------------------------------------
      color picker start
      ----------------------------------------*/
-    (function() {
-        
+    (function () {
+
     })();
     var body_event = $("body");
-    body_event.on("click", ".color-1", function() {
-        $("#color" ).attr("href", "../assets/css/color/color-1.css" );
-        $("#color-admin" ).attr("href", "../assets/css/color/color-1.css" );
+    body_event.on("click", ".color-1", function () {
+        $("#color").attr("href", "../assets/css/color/color-1.css");
+        $("#color-admin").attr("href", "../assets/css/color/color-1.css");
         return false;
 
     });
-    body_event.on("click", ".color-2", function() {
-        $("#color" ).attr("href", "../assets/css/color/color-2.css" );
-        $("#color-admin" ).attr("href", "../assets/css/color/color-2.css" );
+    body_event.on("click", ".color-2", function () {
+        $("#color").attr("href", "../assets/css/color/color-2.css");
+        $("#color-admin").attr("href", "../assets/css/color/color-2.css");
         return false;
     });
-    body_event.on("click", ".color-3", function() {
-        $("#color" ).attr("href", "../assets/css/color/color-3.css" );
-        $("#color-admin" ).attr("href", "../assets/css/color/color-3.css" );
+    body_event.on("click", ".color-3", function () {
+        $("#color").attr("href", "../assets/css/color/color-3.css");
+        $("#color-admin").attr("href", "../assets/css/color/color-3.css");
         return false;
     });
-    $('.color-picker').animate({right: '-190px'});
-    body_event.on("click", ".color-picker a.handle", function(e) {
+    $('.color-picker').animate({
+        right: '-190px'
+    });
+    body_event.on("click", ".color-picker a.handle", function (e) {
         e.preventDefault();
         var div = $('.color-picker');
         if (div.css('right') === '-190px') {
-            $('.color-picker').animate({right: '0px'});
-        }
-        else {
-            $('.color-picker').animate({right: '-190px'});
+            $('.color-picker').animate({
+                right: '0px'
+            });
+        } else {
+            $('.color-picker').animate({
+                right: '-190px'
+            });
         }
     });
-    
+
 });
