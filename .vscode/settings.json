@@ -1,4 +1,4 @@
 {
     "git.autofetch": true,
-    "liveServer.settings.useBrowserPreview": true
+    "liveServer.settings.useBrowserPreview": false,
 }
