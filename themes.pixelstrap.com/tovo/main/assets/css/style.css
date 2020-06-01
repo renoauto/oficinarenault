@@ -57,7 +57,7 @@ h2 {
 	margin-bottom: 32px;
 	color: #000;
 	text-transform: uppercase;
-	letter-spacing: 4px
+	letter-spacing: 2px
 }
 
 h3 {
@@ -103,7 +103,7 @@ h6 {
 }
 
 p {
-	line-height: 1.3em;
+	line-height: 1.5em;
 	font-size: 18px;
 	color: #000000;
 	letter-spacing: 0.03em;
@@ -362,8 +362,8 @@ ul {
 }
 
 .btn-custom {
-	color: #fff;
-	font-size: 14px;
+	color: #000000(121, 116, 116);
+	font-size: 20px;
 	border-radius: 50px;
 	text-transform: uppercase;
 	padding: 10px 25px;
@@ -375,8 +375,8 @@ ul {
 }
 
 .btn-custom.theme-color {
-	background-image: -webkit-gradient(linear, left top, right top, from(#19d3dc), color-stop(#ffb000), color-stop(#ffb000), to(#19d2dd));
-	background-image: linear-gradient(to right, #19d3dc, #ffb000, #ffb000, #19d2dd)
+	background-image: -webkit-gradient(linear, left top, right top, from(#dadada), color-stop(#ffb000), color-stop(#ffb000), to(#19d2dd));
+	background-image: linear-gradient(to right, #dadada, #ffb000, #ffb000, #dadada)
 }
 
 .btn-custom:hover {
@@ -543,7 +543,7 @@ ul {
 }
 
 .features-bg {
-	background-color: #eee
+	background-image: url(../images/feature-bg.png);
 }
 
 .margin-top-bottom {
@@ -1073,11 +1073,11 @@ ul {
 }
 
 .about {
-	width: 90vw;
+	width: 100vw;
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin-top: 0;
-	position: relative;
+	position: center;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center
@@ -1101,13 +1101,13 @@ ul {
 
 .feature {
 	background-image: url(../images/feature-bg.png);
-	width: 95vw;
+	width: 100vw;
 	min-height: 855px;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 0;
+	background-position: 40px;
 	margin-top: 0;
-	position: relative;
+	position: estatic;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1132,13 +1132,13 @@ ul {
 }
 
 .feature-icon {
-	position: absolute;
+	position: static;
 	padding: 0;
 	top: 0
 }
 
 .feature-phone {
-	position: absolute;
+	position: static;
 	top: 100px;
 	left: 325px
 }
@@ -2009,7 +2009,7 @@ ul {
 	position: relative;
 	background-repeat: no-repeat;
 	background-size: cover;
-	overflow: hidden
+	overflow: auto;
 }
 
 .contact .contact-us {
