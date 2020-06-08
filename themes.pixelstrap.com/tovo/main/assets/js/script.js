@@ -19,7 +19,7 @@ $(document).ready(function () {
     });
     $('form button[type="submit"]').on('click', function () {
         $('.show-hide span').text('Show').addClass('show');
-        $('.show-hide').parent().find('input[name="login[password]"]').attr('type', 'password');
+        $('.show-hide').parent().find('input[contato@renoauto.com.br]"]').attr('type', 'password');
     });
 
 
